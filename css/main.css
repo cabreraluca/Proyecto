@@ -1,0 +1,426 @@
+.contenedorPrincipal .productos {
+  padding: 20px;
+  overflow: hidden;
+  text-align: center; }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: black;
+  font-family: 'Oswald', sans-serif;
+  color: white;
+  width: 100%; }
+
+.contenedorPrincipal {
+  width: 100%;
+  height: auto;
+  background-color: black;
+  height: 100vh;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: "header header header header" "imagen imagen imagen imagen" "main main main main" "footer footer footer footer"; }
+  .contenedorPrincipal .cabecera {
+    max-height: 108px;
+    grid-area: header;
+    width: auto;
+    display: grid;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    z-index: 2; }
+    .contenedorPrincipal .cabecera a {
+      width: 100%; }
+      .contenedorPrincipal .cabecera a img {
+        height: 100%;
+        width: 190px;
+        padding-top: 0px; }
+    .contenedorPrincipal .cabecera .menu {
+      width: auto;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      justify-items: center;
+      padding-left: 180px; }
+      .contenedorPrincipal .cabecera .menu li {
+        width: 100%;
+        display: grid;
+        top: 0;
+        font-weight: bold;
+        text-decoration: none;
+        padding: 10px 20px 10px 20px;
+        font-size: medium;
+        color: white; }
+      .contenedorPrincipal .cabecera .menu a {
+        text-decoration: none; }
+  .contenedorPrincipal main {
+    grid-area: main; }
+  .contenedorPrincipal .imagenPrincipal {
+    grid-area: imagen;
+    margin-top: -50px;
+    padding-top: -60px;
+    margin-bottom: 0;
+    font-size: 2rem;
+    text-align: center; }
+  .contenedorPrincipal .imagenPrincipalNosotros {
+    grid-area: imagen;
+    margin-top: -50px;
+    padding-top: -60px;
+    margin-bottom: 0;
+    font-size: 2rem;
+    text-align: center; }
+  .contenedorPrincipal .ingresos {
+    padding-top: 15px;
+    text-align: center;
+    color: white;
+    font-size: 50px; }
+  .contenedorPrincipal .ingresosProductos {
+    font-size: 50px;
+    padding-top: 10px; }
+  .contenedorPrincipal .camisas {
+    font-size: 50px;
+    text-align: center; }
+  .contenedorPrincipal .productos {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 25px;
+    margin-top: 6vh;
+    text-align: center;
+    color: white; }
+    .contenedorPrincipal .productos div img {
+      scale: 0.7; }
+    .contenedorPrincipal .productos div:hover {
+      transform: scale(1.1, 1.1);
+      transition: 0.3s; }
+  .contenedorPrincipal footer {
+    grid-area: footer;
+    margin-top: 30px;
+    text-align: center;
+    color: white; }
+  .contenedorPrincipal iframe {
+    display: grid;
+    grid-template-columns: 1, 1fr;
+    justify-content: center; }
+  .contenedorPrincipal .encontrarnos {
+    padding: 30px;
+    text-align: center;
+    color: white;
+    font-size: 50px; }
+  .contenedorPrincipal h1 {
+    text-align: center; }
+  .contenedorPrincipal main {
+    grid-area: imagen; }
+    .contenedorPrincipal main .politicaH1 {
+      margin: -90px 0px 50px 0px; }
+    .contenedorPrincipal main .politicaP {
+      grid-area: main;
+      text-align: center; }
+
+.contenedorPrincipalContacto {
+  width: 100%;
+  height: auto;
+  height: 100vh;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: "header header header header" "main main main main" "footer footer footer footer"; }
+  .contenedorPrincipalContacto .cabecera {
+    max-height: auto;
+    grid-area: header;
+    width: 100%;
+    display: grid;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    z-index: 2; }
+    .contenedorPrincipalContacto .cabecera a {
+      width: auto;
+      height: 1.6rem;
+      padding-bottom: 0; }
+      .contenedorPrincipalContacto .cabecera a img {
+        height: 4rem;
+        width: 190px;
+        padding-top: 0px;
+        padding-bottom: 0; }
+    .contenedorPrincipalContacto .cabecera nav {
+      margin-top: -50px;
+      margin-left: -47px; }
+      .contenedorPrincipalContacto .cabecera nav .menu {
+        width: auto;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        justify-items: center;
+        padding-left: 90px;
+        padding-top: -150px; }
+        .contenedorPrincipalContacto .cabecera nav .menu li {
+          width: 100%;
+          display: grid;
+          top: 0;
+          font-weight: bold;
+          text-decoration: none;
+          padding: 10px 20px 10px 20px;
+          font-size: medium;
+          color: white; }
+        .contenedorPrincipalContacto .cabecera nav .menu a {
+          text-decoration: none; }
+  .contenedorPrincipalContacto main {
+    height: auto;
+    width: 100%;
+    grid-area: main; }
+    .contenedorPrincipalContacto main .redes {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      width: 25% 25% 25% 25%; }
+      .contenedorPrincipalContacto main .redes a {
+        width: auto;
+        gap: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .contenedorPrincipalContacto main .redes a img {
+          height: 3rem;
+          width: 3rem; }
+    .contenedorPrincipalContacto main h1 {
+      margin-top: 0;
+      text-align: center; }
+  .contenedorPrincipalContacto footer {
+    grid-area: footer;
+    text-align: center; }
+  .contenedorPrincipalContacto .form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    .contenedorPrincipalContacto .form div {
+      padding: 10px;
+      width: 50%; }
+      .contenedorPrincipalContacto .form div button {
+        border-color: red;
+        background-color: red; }
+
+@media only screen and (max-width: 992px) {
+  .contenedorPrincipal {
+    grid-template-columns: repeat(4, 1);
+    grid-template-areas: "header header header header" "imagen imagen imagen imagen" "main main main main" "footer footer footer footer"; }
+    .contenedorPrincipal .cabecera {
+      grid-area: header;
+      max-height: 1rem; }
+      .contenedorPrincipal .cabecera img {
+        height: 100%; }
+      .contenedorPrincipal .cabecera a {
+        display: flex;
+        justify-content: center; }
+      .contenedorPrincipal .cabecera nav div ul {
+        display: flex;
+        justify-content: center; }
+        .contenedorPrincipal .cabecera nav div ul a li {
+          font-size: 1rem; }
+      .contenedorPrincipal .cabecera nav .menu {
+        padding-left: 0;
+        display: flex;
+        justify-content: center; }
+        .contenedorPrincipal .cabecera nav .menu a {
+          display: flex;
+          justify-content: center;
+          padding: 0; }
+          .contenedorPrincipal .cabecera nav .menu a li {
+            font-size: 0.9rem; }
+    .contenedorPrincipal .footer {
+      margin: 0; }
+    .contenedorPrincipal .productos div:hover {
+      transform: none; }
+    .contenedorPrincipal .productos {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      text-align: center; }
+    .contenedorPrincipal p {
+      font-size: 1.4rem; }
+  p {
+    text-align: center; }
+  .politicaH1 {
+    margin-top: 10rem; }
+  .ingresosProductos {
+    margin-top: 6rem; }
+  .contenedorPrincipalContacto {
+    width: 100%;
+    height: auto;
+    height: 100vh;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "header header header header" "main main main main" "footer footer footer footer"; }
+    .contenedorPrincipalContacto .cabecera {
+      grid-area: header; }
+      .contenedorPrincipalContacto .cabecera img {
+        height: 100%; }
+      .contenedorPrincipalContacto .cabecera a {
+        display: flex;
+        justify-content: center; }
+      .contenedorPrincipalContacto .cabecera nav div ul {
+        display: flex;
+        justify-content: center; }
+        .contenedorPrincipalContacto .cabecera nav div ul a li {
+          font-size: 1rem; }
+      .contenedorPrincipalContacto .cabecera nav {
+        margin-top: 0; }
+        .contenedorPrincipalContacto .cabecera nav margin .menu {
+          padding-left: 0;
+          display: flex;
+          justify-content: center; }
+          .contenedorPrincipalContacto .cabecera nav margin .menu a {
+            display: flex;
+            justify-content: center;
+            padding-top: 10px; }
+            .contenedorPrincipalContacto .cabecera nav margin .menu a li {
+              font-size: 0.9rem; }
+    .contenedorPrincipalContacto .form {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; }
+      .contenedorPrincipalContacto .form div {
+        padding: 10px;
+        width: 100%; }
+        .contenedorPrincipalContacto .form div button {
+          border-color: red;
+          background-color: red; } }
+
+@media only screen and (max-width: 600px) {
+  .contenedorPrincipal {
+    height: 100vh;
+    grid-template-columns: repeat(4, 1);
+    grid-template-areas: "header header header header" "imagen imagen imagen imagen" "main main main main" "footer footer footer footer"; }
+    .contenedorPrincipal .cabecera img {
+      margin: 2px; }
+    .contenedorPrincipal .cabecera a {
+      display: flex;
+      justify-content: center; }
+    .contenedorPrincipal .cabecera nav div ul {
+      display: flex;
+      justify-content: center; }
+      .contenedorPrincipal .cabecera nav div ul a li {
+        font-size: 1rem; }
+    .contenedorPrincipal .cabecera .menu {
+      padding-left: 0;
+      display: flex;
+      justify-content: center; }
+      .contenedorPrincipal .cabecera .menu a {
+        display: flex;
+        justify-content: center;
+        padding: 0; }
+        .contenedorPrincipal .cabecera .menu a li {
+          padding: 0;
+          margin: 15px;
+          font-size: 0.8rem; }
+    .contenedorPrincipal main {
+      grid-area: main; }
+      .contenedorPrincipal main .imagenPrincipalNosotros {
+        padding-top: 10rem; }
+      .contenedorPrincipal main .imagenPrincipal {
+        padding-top: 10rem; }
+      .contenedorPrincipal main .productos div:hover {
+        transform: none; }
+      .contenedorPrincipal main .ingresosProductos {
+        justify-content: center;
+        font-size: 50px;
+        margin-top: 8rem; }
+      .contenedorPrincipal main .productos {
+        display: grid;
+        grid-template-columns: repeat(1, 3fr);
+        text-align: center; }
+      .contenedorPrincipal main p {
+        font-size: 2rem; }
+      .contenedorPrincipal main .ingresos {
+        font-size: 50px;
+        padding-top: -5rem; }
+      .contenedorPrincipal main .encontrarnos {
+        font-size: 50px;
+        padding-top: 10px; }
+      .contenedorPrincipal main .politicaH1 {
+        display: flex;
+        justify-content: center;
+        margin: 130px 0px 0px 0px;
+        text-decoration: underline 2px red; }
+      .contenedorPrincipal main .politicaP {
+        font-size: 1.3rem;
+        line-height: 1.8rem;
+        text-align: center; }
+    .contenedorPrincipal h1 {
+      margin: auto;
+      padding: auto;
+      display: flex;
+      text-align: center;
+      justify-self: center; }
+    .contenedorPrincipal p {
+      text-align: center; }
+    .contenedorPrincipal footer p {
+      font-size: small; }
+  .camisas {
+    font-size: 50px;
+    text-align: center; }
+  .contenedorPrincipalContacto {
+    height: 100vh;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "header header header header" "main main main main" "footer footer footer footer"; }
+    .contenedorPrincipalContacto .cabecera {
+      min-height: 20vh;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%; }
+      .contenedorPrincipalContacto .cabecera a {
+        height: min-content;
+        display: flex;
+        justify-content: center;
+        margin-top: 0; }
+      .contenedorPrincipalContacto .cabecera nav div {
+        padding-top: 0; }
+        .contenedorPrincipalContacto .cabecera nav div ul {
+          display: flex;
+          justify-content: center; }
+          .contenedorPrincipalContacto .cabecera nav div ul a {
+            padding: 0; }
+            .contenedorPrincipalContacto .cabecera nav div ul a li {
+              font-size: 1rem; }
+      .contenedorPrincipalContacto .cabecera .menu {
+        padding-left: 0;
+        display: flex;
+        justify-content: center; }
+        .contenedorPrincipalContacto .cabecera .menu a {
+          display: flex;
+          justify-content: center;
+          padding-top: 10px; }
+          .contenedorPrincipalContacto .cabecera .menu a li {
+            padding: 0;
+            margin: 15px;
+            font-size: 0.9rem; }
+    .contenedorPrincipalContacto main {
+      width: 100%;
+      min-height: 70vh; }
+      .contenedorPrincipalContacto main .form {
+        min-height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; }
+        .contenedorPrincipalContacto main .form .mb-3 {
+          padding: 0; }
+        .contenedorPrincipalContacto main .form div button {
+          padding: 0;
+          width: 100%; }
+    .contenedorPrincipalContacto .form {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; }
+      .contenedorPrincipalContacto .form .mb-3 {
+        padding: 0; }
+      .contenedorPrincipalContacto .form div {
+        padding: 10px;
+        width: 100%; } }
